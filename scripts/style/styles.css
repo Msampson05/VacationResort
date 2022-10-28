@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight:600;
+    color: #d8d8d8;
+    
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+h6 {
+    color: #d8d8d8;
+}
+
+p {
+    color: aliceblue;
+}
+
+button {
+    font-size:0.8rem;
+    font-weight:700;
+    outline: none;
+    border: none;
+    background-color: greenyellow;
+    color: black;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a38;
+}
+    /*Nav Bar*/
+ .navbar{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+ }
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i.active{
+    color: greenyellow;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px; 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+/* Homepage */
+
+#home {
+    background-image: url("Background2.png");
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: top 60px center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+ #home span {
+    color: greenyellow;
+}
+
+ #policy {
+    background-image: url("strpolbg.png");
+}
+
+#insta {
+  background-image: url("igbg.png");
+  width: 100%;
+  height: 100vh;
+  background-size:cover;
+  background-position: top center;
+}
+.homebtn {
+  font-size:0.8rem;
+  font-weight:700;
+  outline: none;
+  border: none;
+  background-color: greenyellow;
+  color: black;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.homebtn:hover {
+  background-color: #3a38;
+
+}
+
+.store{
+  color: azure;
+}
+
+
+
+
+ /* Product Page */
+
+#product {
+    background-image: url("Propgback.png");
+    width: 100%;
+    height: 60vh;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ #new .one img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ }
+
+ #new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3 ease;
+ }
+
+ #new .one:hover .details {
+    cursor: pointer;
+    background-color: rgba(81, 236, 96, 0.479)
+ }
+ #new .one .details button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3 ease;
+}
+
+#new .one .details button:hover{
+    color: rgb(252, 253, 252);
+    border-bottom: 1px solid rgb(252, 253, 252);
+}
+ 
+
+/* Login Page  */
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+.h-custom {
+height: calc(100% - 73px);
+}
+
+
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+
+
+
+/* Registration Page */
+
+.bg-image {
+    background-image: url('regbg.png');
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+
+}
+
+.card {
+    margin-top: -100px;
+          background: hsla(0, 0%, 100%, 0.8);
+          backdrop-filter: blur(30px);
+}
+
+.btn {
+    color: greenyellow;
+    background-color: #000;
+}
+
+
+
+
+
+
+/* Checkout page */
+
+body{background-color: #F6F8FD}.bg{background-color: #F6F8FD}.green{color: rgb(15, 207, 143);font-weight: 680}@media(max-width:567px){.mobile{padding-top: 40px}}
+
+/* About page */ 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    background-image: url('abbgpg.png');
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: greenyellow;
+  }
+
+  .content{
+    color: #000;
+  }
+
+  .name{
+    color: #000;
+  }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: greenyellow;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  /* Footer */
+  
+  footer {
+    background-color: #000;
+  }
+
+  footer h5{
+    color: greenyellow;
+    font-weight:700 ;
+    font-size: 1.2rem;
+  }
+
+  footer p{
+    color: greenyellow;
+  }
+
+  footer li{
+     padding-bottom: 4px;
+  }
+
+  footer li a{
+    font-size: 0.8rem;
+    color:antiquewhite
+  }
+
+  footer li a:hover{
+    color: #d8d8d8;
+  }
