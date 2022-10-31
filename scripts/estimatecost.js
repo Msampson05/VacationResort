@@ -15,29 +15,25 @@ window.onload = function() {
     let inSeasonDate = new Date(checkInDate).date = months[inSeasonDate.getMonth(5 ,6, 7)];
     let outOfSeason = new Date(checkInDate).date = months[outOfSeason.getMonth(0, 1, 2 , 3, 4, 5 ,8 , 9 ,10 ,)];
     let roomRate = 0 ;
-    let twinRoomRate = 0 ;
-    if (checkInDate = inSeasonDate) {
-            roomRate ;
-    }
-
-     if (checkInDate = outOfSeason) {
-        roomRate ;
-     }
     }
     function EstimatebtnOnClick() {
         //Call HTML elements needed for ouput 
       const numberOfDays = Number(document.getElementById("numberOfDays").value);
-
+      const queenRoom = document.getElementById("queenRoom").checked;
+      
      // If statement for checked rooms 
-      if (document.getElementById("queenRoom").checked){
-        queenRoom = 150
+      if (inSeasonDate){
+          const queenRoomRate = document.getElementById("queenRoom").checked;
+          queenRoomRate = queenRoom 
 
       }
       if (document.getElementById("KingRoom").checked){
-          KingRoom =  150
+          inSeasonDate = 250 *= numberOfDays
+          outOfSeason =  150 *= numberOfDays
       }
       if (document.getElementById("twoBedRoom").checked){
-        twoBedRoom =  210
+           inSeasonDate = 350 *= numberOfDays
+           outOfSeason =  210 *= numberOfDays
       }
 
       //If statement for discounts 
@@ -51,7 +47,7 @@ window.onload = function() {
       
       
       //total output for each h6 tag 
-      
+
       // The orginal room cost would be determined by the inseasondate 
      document.getElementById("orginalRoomCost").innerHTML = 'Original Room Cost:' + (roomRate);
 

@@ -110,8 +110,8 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="checkInDate" class="form-lavel">Check In Date:</label>
-                                    <input type="date" class="form-control" id="checkInDate" />
+                                    <label for="checkInDateInput" class="form-lavel">Check In Date:</label>
+                                    <input type="date" class="form-control" id="checkInDateInput" />
                                 </div>
 
                                 <br>
@@ -125,6 +125,28 @@
                                     <option value="4">4</option>
                                     <option value="5">5</option>
                                     <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
                                 </select>
 
                                 <br>
@@ -134,24 +156,18 @@
                                 <fieldset>
                                     <legend>Select A Room<legend>
 
-                                            <input type="checkbox" id="queenRoom" name="queenRoom" value="queenRoom"
+                                            <input type="radio" id="queenRoomType" name="RoomType" value="queenRoomType"
                                                 checked>Queen Room<br>
 
-                                            <input type="checkbox" id="kingRoom" name="KingRoom" value="kingRoom"> King
+                                            <input type="radio" id="kingRoomType" name="RoomType" value="kingRoomType"> King
                                             Room<br>
 
-                                            <input type="checkbox" id="twoBedRoom" name="twoBedRoom" value="twoBedRoom">
+                                            <input type="radio" id="twoBedRoomType" name="RoomType" value="twoBedRoomType">
                                             Two-Bedroom Suite<br>
                                 </fieldset>
-                                 
-                                <script>
-                                    $(document).ready(function(){
-                                        $('input:checkbox').click(function() {
-                                            $('input:checkbox').not(this).prop('checked', false);
-                                        });
-                                    });
-                                    </script>
-
+                                
+                                
+                                     
 
                                 <h2> Number Of Adults </h2>
                                 <select name="numberOfAdults" id="numberOfAdults">
@@ -180,11 +196,11 @@
 
                                 <legend> Discounts </legend>
 
-
-                                   <input type="radio" id="inputNone" name="inputNone" value="inputNone"> None <br>
-                                   <input type="radio" id="inputAAAdis" name="inputAAAdis" value="inputAAAdis"> AAA/Senior (10%) <br>
-                                   <input type="radio" id="inputMILdis" name="inputMILdis" value="inputMILdis"> Military (20%)<br>
-
+                                   <div id="discountCode">
+                                   <input type="radio" id="inputNone" name="discountCode" value="inputNone"> None <br>
+                                   <input type="radio" id="inputAAAdis" name="discountCode" value="inputAAAdis"> AAA/Senior (10%) <br>
+                                   <input type="radio" id="inputMILdis" name="discountCode" value="inputMILdis"> Military (20%)<br>
+                                  </div>
 
 
                                 <!--Resort Estimate Cost-->
@@ -268,7 +284,7 @@
 
 
 
-  <script src="/estimatecost2.js"></script>
+  <script src="scripts/estimatecost2.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
